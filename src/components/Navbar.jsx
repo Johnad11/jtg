@@ -26,6 +26,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex items-center gap-4">
+
                         <a
                             href="https://jtg-journals.vercel.app/"
                             target="_blank"
@@ -62,6 +63,7 @@ const Navbar = () => {
                     >
                         Launch App
                     </a>
+
                 </div>
             </div>
         </nav>

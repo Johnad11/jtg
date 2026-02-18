@@ -36,10 +36,15 @@ const Hero = () => {
                         <Calculator size={20} />
                         Open Journal App
                     </a>
-                    <button className="flex items-center gap-2 bg-transparent hover:bg-white/5 text-white border border-white/20 px-8 py-4 rounded-xl font-bold transition-transform hover:scale-105">
+                    <a
+                        href="https://jtg-project-hive.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-transparent hover:bg-white/5 text-white border border-white/20 px-8 py-4 rounded-xl font-bold transition-transform hover:scale-105"
+                    >
                         <Users size={20} />
                         Join The Hive
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>

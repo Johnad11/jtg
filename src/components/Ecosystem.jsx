@@ -28,8 +28,8 @@ const Ecosystem = () => {
             icon: <Users className="text-emerald" size={24} />,
             text: "A revolutionary community-owned trading floor. Join a collective mission where we pool intelligence and capital to dominate the markets as a single unit.",
             badge: "LIVE",
-            link: "#",
-            cta: "Coming Soon"
+            link: "https://jtg-project-hive.vercel.app/",
+            cta: "Launch App"
         },
         {
             title: "Education",
