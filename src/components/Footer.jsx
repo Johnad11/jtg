@@ -1,4 +1,4 @@
-import { Instagram, Twitter, MessageSquare, Music2 } from 'lucide-react';
+import { Instagram, Twitter, Gamepad2, Music2 } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 const Footer = () => {
@@ -25,9 +25,9 @@ const Footer = () => {
                         <a href="https://www.tiktok.com/@johnad_trades" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-emerald transition-colors">
                             <Music2 size={20} />
                         </a>
-                        <a href="https://chat.whatsapp.com/LP4I8vHedcNIOVqzr8Qjb3" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-emerald transition-colors flex items-center gap-1 font-bold text-xs uppercase">
-                            <MessageSquare size={16} />
-                            WHATSAPP
+                        <a href="https://discord.gg/QTEhs9cZK" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-emerald transition-colors flex items-center gap-1 font-bold text-xs uppercase">
+                            <Gamepad2 size={16} />
+                            DISCORD
                         </a>
                     </div>
                 </div>
