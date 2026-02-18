@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { TrendingUp, TrendingDown, Target, Zap } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const ProjectHive = () => {
     const [equity, setEquity] = useState(100245.50);
@@ -11,21 +12,48 @@ const ProjectHive = () => {
         return () => clearInterval(interval);
     }, []);
 
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.2
+            }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, x: -20 },
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: { duration: 0.6, ease: "easeOut" }
+        }
+    };
+
     return (
         <section id="hive" className="py-24 bg-gradient-to-b from-navy-950 to-navy-900 overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
                     {/* Left Side: Content */}
-                    <div className="flex-1 text-left">
-                        <h2 className="text-emerald font-bold tracking-widest text-sm mb-4">PROJECT HIVE</h2>
-                        <h3 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
+                    <motion.div
+                        className="flex-1 text-left"
+                        variants={containerVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, margin: "-100px" }}
+                    >
+                        <motion.h2 variants={itemVariants} className="text-emerald font-bold tracking-widest text-sm mb-4">
+                            PROJECT HIVE
+                        </motion.h2>
+                        <motion.h3 variants={itemVariants} className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
                             COMMUNITY-OWNED <br />
                             PROP FIRM ACCOUNT.
-                        </h3>
-                        <p className="text-gray-400 text-lg mb-8 leading-relaxed">
+                        </motion.h3>
+                        <motion.p variants={itemVariants} className="text-gray-400 text-lg mb-8 leading-relaxed">
                             Experience the power of collective trading. Project Hive is our institutional-grade account managed by the JTG community. We pool expertise, data, and risk management to scale together.
-                        </p>
-                        <div className="space-y-4">
+                        </motion.p>
+                        <motion.div variants={itemVariants} className="space-y-4">
                             <div className="flex items-center gap-3">
                                 <div className="h-6 w-6 rounded-full bg-emerald/10 border border-emerald/20 flex items-center justify-center">
                                     <Target size={14} className="text-emerald" />
@@ -38,15 +66,29 @@ const ProjectHive = () => {
                                 </div>
                                 <span className="text-gray-300 font-medium">Real-time Trading Insights</span>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
 
                     {/* Right Side: Terminal Mockup */}
-                    <div className="flex-1 w-full max-w-2xl">
+                    <motion.div
+                        className="flex-1 w-full max-w-2xl"
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    >
                         <div className="relative group">
-                            <div className="absolute -inset-1 bg-gradient-to-r from-emerald/50 to-electric-blue/50 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                            <motion.div
+                                className="absolute -inset-1 bg-gradient-to-r from-emerald/50 to-electric-blue/50 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"
+                                animate={{ opacity: [0.2, 0.4, 0.2] }}
+                                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                            ></motion.div>
 
-                            <div className="relative bg-[#020617] rounded-xl border border-white/10 overflow-hidden shadow-2xl">
+                            <motion.div
+                                className="relative bg-[#020617] rounded-xl border border-white/10 overflow-hidden shadow-2xl"
+                                animate={{ y: [0, -10, 0] }}
+                                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                            >
                                 {/* Terminal Header */}
                                 <div className="bg-navy-800/50 px-4 py-3 border-b border-white/5 flex items-center justify-between">
                                     <div className="flex gap-2">
@@ -108,9 +150,9 @@ const ProjectHive = () => {
                                         Login to View Live
                                     </a>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>
