@@ -12,7 +12,7 @@ const Navbar = () => {
                     <div className="flex items-center gap-3">
                         <img src={logo} alt="JTG Logo" className="h-10 w-auto" />
                         <span className="text-2xl font-black tracking-tight text-white uppercase">
-                            JTG Ecosystem
+                            Johnad Traders Group
                         </span>
                     </div>
 
@@ -28,7 +28,7 @@ const Navbar = () => {
                     <div className="flex items-center gap-4">
 
                         <a
-                            href="https://jtg-journals.vercel.app/"
+                            href="https://jtgjournal.johnadtradersgroup.name.ng/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hidden sm:inline-flex bg-emerald hover:bg-emerald/90 text-white px-6 py-2 rounded-full font-semibold transition-all hover:shadow-[0_0_20px_rgba(27,166,87,0.4)] items-center justify-center"
@@ -56,7 +56,7 @@ const Navbar = () => {
                         <a href="#contact" className="text-xl text-gray-400 hover:text-white transition-colors py-2" onClick={() => setIsOpen(false)}>Contact</a>
                     </div>
                     <a
-                        href="https://jtg-journals.vercel.app/"
+                        href="https://jtgjournal.johnadtradersgroup.name.ng/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full max-w-xs bg-emerald text-white px-8 py-4 rounded-xl font-bold text-center shadow-[0_0_20px_rgba(27,166,87,0.2)] active:scale-95 transition-transform"

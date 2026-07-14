@@ -10,7 +10,7 @@ const Footer = () => {
                         <div className="flex items-center gap-3">
                             <img src={logo} alt="JTG Logo" className="h-8 w-auto brightness-90 grayscale-[0.5] hover:grayscale-0 transition-all opacity-80" />
                             <span className="text-xl font-bold tracking-tighter text-white uppercase">
-                                JTG Ecosystem
+                                Johnad Traders Group
                             </span>
                         </div>
                     </div>
@@ -34,7 +34,7 @@ const Footer = () => {
 
                 <div className="mt-12 pt-8 border-t border-white/5 text-center">
                     <p className="text-gray-600 text-xs uppercase tracking-widest font-medium">
-                        © 2026 JTG Ecosystem. TRADING INVOLVES RISK.
+                        © 2026 Johnad Traders Group. TRADING INVOLVES RISK.
                     </p>
                 </div>
             </div>

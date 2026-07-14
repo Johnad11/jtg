@@ -51,7 +51,7 @@ const Hero = () => {
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald"></span>
                     </span>
-                    JTG ECOSYSTEM IS LIVE
+                    JOHNAD TRADERS GROUP IS LIVE
                 </motion.div>
 
                 {/* Main Heading */}
@@ -79,7 +79,7 @@ const Hero = () => {
                     className="flex flex-col sm:flex-row items-center justify-center gap-4"
                 >
                     <motion.a
-                        href="https://jtg-journals.vercel.app/"
+                        href="https://jtgjournal.johnadtradersgroup.name.ng/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 bg-emerald hover:bg-emerald/90 text-white px-8 py-4 rounded-xl font-bold transition-all hover:scale-105 shadow-lg shadow-emerald/20 hover:shadow-emerald/40"
@@ -90,7 +90,7 @@ const Hero = () => {
                         Open Journal App
                     </motion.a>
                     <motion.a
-                        href="https://jtg-project-hive.vercel.app/"
+                        href="https://jtghive.johnadtradersgroup.name.ng/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 bg-transparent hover:bg-white/5 text-white border border-white/20 px-8 py-4 rounded-xl font-bold transition-all hover:scale-105"

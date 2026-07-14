@@ -12,7 +12,7 @@ const Ecosystem = () => {
             ),
             text: "Your digital risk fortress. Precisely calculate lot sizes, track performance metrics, and eliminate emotional bias with institutional-grade journaling tools.",
             badge: "FREE UTILITY",
-            link: "https://jtg-journals.vercel.app/",
+            link: "https://jtgjournal.johnadtradersgroup.name.ng/",
             cta: "Open App"
         },
         {
@@ -20,7 +20,7 @@ const Ecosystem = () => {
             icon: <Shield className="text-emerald" size={24} />,
             text: "Institutional-grade risk oversight. Deploy advanced algorithms and automated safeguards to protect capital and maintain growth across multiple prop firm accounts.",
             badge: "NEW",
-            link: "https://johnadtradersgroup.vercel.app/",
+            link: "https://prop.johnadtradersgroup.name.ng/",
             cta: "Manage Risk"
         },
         {
@@ -28,7 +28,7 @@ const Ecosystem = () => {
             icon: <Users className="text-emerald" size={24} />,
             text: "A revolutionary community-owned trading floor. Join a collective mission where we pool intelligence and capital to dominate the markets as a single unit.",
             badge: "LIVE",
-            link: "https://jtg-project-hive.vercel.app/",
+            link: "https://jtghive.johnadtradersgroup.name.ng/",
             cta: "Launch App"
         },
         {

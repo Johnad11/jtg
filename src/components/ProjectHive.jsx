@@ -142,7 +142,7 @@ const ProjectHive = () => {
                                     </div>
 
                                     <a
-                                        href="https://jtg-project-hive.vercel.app/"
+                                    href="https://jtghive.johnadtradersgroup.name.ng/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="w-full mt-6 py-3 bg-emerald/10 hover:bg-emerald/20 border border-emerald/30 text-emerald text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-2"
