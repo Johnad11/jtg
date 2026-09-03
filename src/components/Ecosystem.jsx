@@ -27,7 +27,7 @@ const Ecosystem = () => {
             icon: <Palette className="text-emerald" size={24} />,
             text: "Next-generation dark mode digital storefront and UI systems purpose-built for FX, crypto, stocks, shares, degen and DeFi trading setups.",
             badge: "STOREFRONT",
-            targetUrl: "https://jtg-themes.vercel.app/",
+            targetUrl: "https://themes.johnadtradersgroup.name.ng/",
             cta: "Access Themes"
         },
         {

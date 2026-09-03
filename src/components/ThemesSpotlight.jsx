@@ -1,5 +1,5 @@
 import React from 'react';
-import { Palette, Check, Monitor, Smartphone, Sparkles, ArrowUpRight } from 'lucide-react';
+import { Palette, Check, Monitor, Smartphone, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const ThemesSpotlight = () => {

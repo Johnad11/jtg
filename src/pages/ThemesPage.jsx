@@ -141,6 +141,16 @@ const ThemesPage = () => {
           </div>
 
           <div className="flex items-center gap-3">
+            <a
+              href="https://themes.johnadtradersgroup.name.ng/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-semibold text-emerald hover:text-white px-3 py-2 rounded-lg bg-emerald/10 border border-emerald/20 hover:bg-emerald/20 transition-colors inline-flex items-center gap-1.5"
+            >
+              <span>Launch Storefront</span>
+              <ArrowUpRight size={13} />
+            </a>
+
             <Link
               to="/ecosystem"
               className="text-xs font-semibold text-gray-300 hover:text-white px-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors inline-flex items-center gap-1.5"
@@ -247,13 +257,16 @@ const ThemesPage = () => {
               </div>
 
               <div className="pt-3 border-t border-white/5 flex items-center gap-3">
-                <Link
-                  to={user ? "/ecosystem" : "/auth?mode=signup"}
+                <a
+                  href="https://themes.johnadtradersgroup.name.ng/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full py-3 px-4 bg-emerald hover:bg-emerald/90 text-white font-bold text-xs sm:text-sm rounded-xl flex items-center justify-center gap-2 transition-all shadow-[0_0_15px_rgba(27,166,87,0.2)]"
                 >
                   <ShoppingBag size={15} />
                   <span>Get Theme Pack</span>
-                </Link>
+                  <ArrowUpRight size={14} />
+                </a>
               </div>
             </motion.div>
           ))}

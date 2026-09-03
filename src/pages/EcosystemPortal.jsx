@@ -134,7 +134,7 @@ const EcosystemPortal = () => {
       icon: <Palette className="text-emerald" size={28} />,
       badge: "STOREFRONT",
       badgeColor: "bg-purple-500/10 text-purple-400 border-purple-500/20",
-      externalUrl: "https://jtg-themes.vercel.app/",
+      externalUrl: "https://themes.johnadtradersgroup.name.ng/",
       cta: "Launch Themes Store",
       features: ["FX & Crypto OLED Wallpapers", "Degen & DeFi Terminal Themes", "Stock Market Multi-Monitor Setups"]
     },
@@ -377,7 +377,7 @@ const EcosystemPortal = () => {
               <motion.a
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                href="https://jtg-themes.vercel.app/"
+                href="https://themes.johnadtradersgroup.name.ng/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-5 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-bold text-sm flex items-center gap-2 transition-all cursor-pointer"
