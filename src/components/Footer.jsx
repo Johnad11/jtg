@@ -1,4 +1,5 @@
-import { Instagram, Twitter, Gamepad2, Music2 } from 'lucide-react';
+import React from 'react';
+import { Gamepad2, Mail } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 const Footer = () => {
@@ -16,18 +17,22 @@ const Footer = () => {
                     </div>
 
                     <div className="flex items-center gap-6">
-                        <a href="https://www.instagram.com/johnad_trades" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-emerald transition-colors">
-                            <Instagram size={20} />
+                        <a
+                            href="https://discord.gg/Zd6nzv9AJy"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-emerald transition-colors flex items-center gap-2 font-bold text-xs uppercase"
+                        >
+                            <Gamepad2 size={18} className="text-emerald" />
+                            <span>Discord</span>
                         </a>
-                        <a href="https://x.com/emeka_johnad" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-emerald transition-colors">
-                            <Twitter size={20} />
-                        </a>
-                        <a href="https://www.tiktok.com/@johnad_trades" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-emerald transition-colors">
-                            <Music2 size={20} />
-                        </a>
-                        <a href="https://discord.gg/QTEhs9cZK" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-emerald transition-colors flex items-center gap-1 font-bold text-xs uppercase">
-                            <Gamepad2 size={16} />
-                            DISCORD
+
+                        <a
+                            href="mailto:nwabuezejohnad11@gmail.com"
+                            className="text-gray-400 hover:text-emerald transition-colors flex items-center gap-2 font-bold text-xs uppercase"
+                        >
+                            <Mail size={18} className="text-emerald" />
+                            <span>Support Email</span>
                         </a>
                     </div>
                 </div>

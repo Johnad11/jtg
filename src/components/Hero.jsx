@@ -1,5 +1,6 @@
 import React from 'react';
-import { Calculator, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -19,7 +20,7 @@ const Hero = () => {
         visible: {
             opacity: 1,
             y: 0,
-            transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } // Custom easing for premium feel
+            transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] }
         }
     };
 
@@ -60,7 +61,7 @@ const Hero = () => {
                     className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[1.1] tracking-tight mb-8"
                 >
                     STOP GAMBLING. <br />
-                    <span className="bg-gradient-to-r from-emerald to-electric-blue bg-clip-text text-transparent inline-block">
+                    <span className="bg-gradient-to-r from-emerald via-teal-300 to-electric-blue bg-clip-text text-transparent inline-block">
                         START SCALING.
                     </span>
                 </motion.h1>
@@ -70,7 +71,7 @@ const Hero = () => {
                     variants={itemVariants}
                     className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
                 >
-                    The ultimate command center for Prop Firm traders. We provide the Tools, the Capital, and the Community to get you funded.
+                    The institutional command center for modern traders. Precision journaling, digital workstation themes, proprietary risk management, and market intelligence.
                 </motion.p>
 
                 {/* Buttons */}
@@ -78,28 +79,26 @@ const Hero = () => {
                     variants={itemVariants}
                     className="flex flex-col sm:flex-row items-center justify-center gap-4"
                 >
-                    <motion.a
-                        href="https://jtgjournal.johnadtradersgroup.name.ng/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 bg-emerald hover:bg-emerald/90 text-white px-8 py-4 rounded-xl font-bold transition-all hover:scale-105 shadow-lg shadow-emerald/20 hover:shadow-emerald/40"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                    >
-                        <Calculator size={20} />
-                        Open Journal App
-                    </motion.a>
-                    <motion.a
-                        href="https://jtghive.johnadtradersgroup.name.ng/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 bg-transparent hover:bg-white/5 text-white border border-white/20 px-8 py-4 rounded-xl font-bold transition-all hover:scale-105"
-                        whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.05)" }}
-                        whileTap={{ scale: 0.95 }}
-                    >
-                        <Users size={20} />
-                        Join The Hive
-                    </motion.a>
+                    <Link to="/auth">
+                        <motion.button
+                            className="flex items-center gap-2 bg-emerald hover:bg-emerald/90 text-white px-8 py-4 rounded-xl font-bold transition-all hover:scale-105 shadow-lg shadow-emerald/20 hover:shadow-emerald/40 cursor-pointer"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                        >
+                            <span>Get Started</span>
+                            <ArrowRight size={20} />
+                        </motion.button>
+                    </Link>
+                    <a href="#ecosystem">
+                        <motion.button
+                            className="flex items-center gap-2 bg-transparent hover:bg-white/5 text-white border border-white/20 px-8 py-4 rounded-xl font-bold transition-all hover:scale-105 cursor-pointer"
+                            whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.05)" }}
+                            whileTap={{ scale: 0.95 }}
+                        >
+                            <Sparkles size={20} className="text-emerald" />
+                            <span>Explore Ecosystem</span>
+                        </motion.button>
+                    </a>
                 </motion.div>
             </motion.div>
         </section>

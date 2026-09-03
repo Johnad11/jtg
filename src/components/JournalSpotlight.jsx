@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calculator, Shovel, ShieldCheck, Target } from 'lucide-react';
+import { Shovel, ShieldCheck, Target } from 'lucide-react';
 import SpotlightLayout from './SpotlightLayout';
 
 const JournalSpotlight = () => {
@@ -55,7 +55,7 @@ const JournalSpotlight = () => {
     return (
         <SpotlightLayout
             id="journal"
-            badge="JTG Journal"
+            badge="Journal"
             headline="Your digital risk fortress."
             description="Precisely calculate lot sizes, track performance metrics, and eliminate emotional bias with institutional-grade journaling tools. Built for traders who take their capital seriously."
             features={features}
